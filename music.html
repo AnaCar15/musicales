@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Musicales Favoritos</title>
+  <link rel="stylesheet" href="musical.css" />
+</head>
+<body>
+  <header>
+    MUSICALES FAVORITOS
+  </header>
+
+  <div class="container">
+    
+    <div class="musical">
+      <img src="ima/epic - Acceso directo.lnk" alt="The Epic Musical" />
+      <div class="info">
+        <h2 class="epic">The Epic Musical</h2>
+        <p><strong>Compositor:</strong> Jorge Rivera-Herrans</p>
+        <p><strong>Género Musical:</strong></p>
+        <ul>
+          <li>Pop</li>
+          <li>Electrónica</li>
+          <li>Orquesta</li>
+        </ul>
+        <a class="playlist-btn" href="https://open.spotify.com/playlist/23dvrzjnaVoD2cUdoPLbo9?si=cKz6mzbjQ9OSz23EiUVAgg" target="_blank">Playlist</a>
+        <button class="info-btn" onclick="mostrarInfo(this)">+ Info</button>
+        <div class="extra-info" style="display: none;">
+          <p>Es una adaptación contemporánea de La Odisea de Homero, creada por Jorge Rivera-Herrans, a través de una mezcla poderosa de teatro musical, 
+             narrativa épica y estilos musicales modernos, la obra sigue a Odiseo en su arduo viaje de regreso a Ítaca tras la guerra de Troya.
+           <br> 
+           <br>
+             En el camino, enfrenta desafíos impuestos por dioses como Poseidón, recibe ayuda de Atenea, y lucha por reencontrarse con su esposa Penélope y su hijo Telémaco, esta dividida en sagas, cada episodio explora conflictos internos y externos, haciendo de este musical una experiencia emocionalmente intensa y visualmente envolvente.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="musical">
+      <img src="ima/Hades - Acceso directo.lnk" alt="Hadestown" />
+      <div class="info">
+        <h2 class="hadestown">Hadestown</h2>
+        <p><strong>Compositora:</strong> Anaïs Mitchell</p>
+        <p><strong>Género Musical:</strong></p>
+        <ul>
+          <li>Folk y Blues</li>
+          <li>Rock</li>
+          <li>Jazz</li>
+        </ul>
+        <a class="playlist-btn" href="https://open.spotify.com/intl-es/artist/3brvz8iY9RVIbbM8KDb3hH?si=SEUNrLGvREC1bbOjNQ75Yw" target="_blank">Playlist</a>
+        <button class="info-btn" onclick="mostrarInfo(this)">+ Info</button>
+        <div class="extra-info" style="display: none;">
+          <p>Hadestown es una adaptación contemporánea de los mitos griegos de Orfeo y Eurídice, creada por Anaïs Mitchell. A través de una mezcla cautivadora de teatro musical,la obra sigue a Orfeo, un joven músico con una canción poderosa, en su viaje al inframundo para rescatar a Eurídice. 
+          <br>
+          <br>
+          Hadestown, gobernado por el implacable Hades y su esposa Perséfone, es una distopía industrial donde el amor y la libertad enfrentan al poder y el control. Narrado por Hermes y acompañado por coros y musas, el musical explora temas como el destino, el sacrificio y la esperanza
+          <br>
+          <br>
+          Cada personaje refleja dilemas humanos profundos, haciendo del espectáculo una experiencia emocional y visualmente impactante. Más que una simple historia de amor trágico, Hadestown reimagina el mito con una voz moderna y conmovedora, recordándonos que aunque el final se repita, 
+          siempre vale la pena volver a intentarlo.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="musical">
+      <img src="ima/hamilton - Acceso directo.lnk" alt="Hamilton" />
+      <div class="info">
+        <h2 class="hamilton">Hamilton</h2>
+        <p><strong>Compositor:</strong> Lin-Manuel Miranda</p>
+        <p><strong>Género Musical:</strong></p>
+        <ul>
+          <li>Hip-hop</li>
+          <li>R&B</li>
+          <li>Jazz</li>
+        </ul>
+        <a class="playlist-btn" href="https://open.spotify.com/intl-es/artist/3UUJfRbrA2nTbcg4i0MOwu?si=Bj4GPlBqQe-Fv6etqyPRyA" target="_blank">Playlist</a>
+        <button class="info-btn" onclick="mostrarInfo(this)">+ Info</button>
+        <div class="extra-info" style="display: none;">
+          <p>es una reinterpretación moderna de la vida de Alexander Hamilton, uno de los padres fundadores de Estados Unidos. La obra narra su trayectoria desde sus orígenes humildes en el Caribe hasta convertirse en mano derecha de 
+            George Washington durante la Revolución Americana y, más tarde, en el primer Secretario del Tesoro.
+          <br>
+          <br>
+          La historia es contada desde la perspectiva de Aaron Burr, su rival político, y abarca eventos clave como la guerra de independencia, la redacción de la Constitución, la creación del sistema financiero y las tensiones políticas
+           que dividieron a los fundadores del país.
+           <br>
+           <br>
+           Además de sus logros, el musical explora la vida personal de Hamilton: su matrimonio con Eliza Schuyler, su relación con sus compañeros revolucionarios y los errores que lo llevaron a su caída. Hamilton no solo retrata una figura histórica compleja, sino que también plantea preguntas
+           sobre el legado, el poder y la forma en que se construye la historia.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function mostrarInfo(boton) {
+      const extraInfo = boton.nextElementSibling;
+      if (extraInfo.style.display === "none") {
+        extraInfo.style.display = "block";
+        boton.textContent = "- Info";
+      } else {
+        extraInfo.style.display = "none";
+        boton.textContent = "+ Info";
+      }
+    }
+  </script>
+   <footer>
+    <footer>
+      <p>
+        <a href="https://open.spotify.com/playlist/6Bs6R00rOmQcAGvxsqeYEo?si=nhJilmbzR7GzblTF5parDw" target="_blank">
+          © 2025 Musicales Favoritos.
+        </a>
+      </p>
+      <p>Contacto: <a href="tel:+521234567890">+52 123 456 7890</a></p>
+    </footer> 
+  </footer>
+</body>
+</html>
